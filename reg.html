@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="css/blocks/header.css" />
+    <link rel="stylesheet" href="/Geometria/Geometria-ExtraBold.eot">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="./5.png" type="image/png">
+    <title>Document</title>
+</head>
+<body >
+    
+  <nav style="background-color: rgba(12, 41, 232, 0.034); " class="navbar navbar-expand-lg " >
+    <div class="container-fluid">
+      <a class="navbar-brand" href="index.html"><img class="yt"  src="./5.png"  width="50px" alt=""
+          /></a>
+          <audio src="Peder B. Helland - Always.mp3" id="sss" preload="auto"></audio>
+    <span style="border:2px solid rgba(12, 41, 232, 0.055);" data-bs-toggle="tooltip"
+    data-bs-placement="bottom"
+    title="Время" class="badge bg-info text-dark" id="date-info"></span>
+  
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link active " href="./catalog.html"></a>
+          </li>
+        
+          <li class="nav-item">
+            <a class="nav-link active" href="./naxod.html"></a>
+          </li>
+        </ul>
+        <form class="d-flex" role="search">
+          <a href="./vxod.html"><button data-bs-toggle="tooltip"
+            data-bs-placement="bottom"
+            title="Тут вход!" type="button" class="btn  me-2">Вход</button></a>
+         <a href="reg.html"><button data-bs-toggle="tooltip"
+          data-bs-placement="bottom"
+          title="Зарегисрируйся пожалуйста"
+          type="button"  class="btn " ></button></a> 
+        </form>
+      </div>
+    </div>
+  </nav>
+  <h2 style="text-align: center;">User Registration</h2>
+  <form class="form2" id="registrationForm">
+      <div>
+          <label for="name">Имя:</label>
+          <input type="text" id="name" name="name" required pattern="[а-яА-ЯёЁ\s-]+" title="Only Cyrillic characters, space, and hyphen are allowed">
+          <span class="error" id="nameError"></span>
+      </div>
+      <div>
+          <label for="surname">Фамилия:</label>
+          <input type="text" id="surname" name="surname" required pattern="[а-яА-ЯёЁ\s-]+" title="Only Cyrillic characters, space, and hyphen are allowed">
+          <span class="error" id="surnameError"></span>
+      </div>
+      <div>
+          <label for="patronymic">Отчество:</label>
+          <input type="text" id="patronymic" name="patronymic" pattern="[а-яА-ЯёЁ\s-]+" title="Only Cyrillic characters, space, and hyphen are allowed">
+          <span class="error" id="patronymicError"></span>
+      </div>
+      <div>
+          <label for="login">Логин (Email):</label>
+          <input type="email" id="login" name="login" required>
+          <span class="error" id="loginError"></span>
+      </div>
+      <div>
+          <label for="password">Password:</label>
+          <input type="password" id="password" name="password" required minlength="6">
+          <span class="error" id="passwordError"></span>
+      </div>
+      <div>
+          <label for="password_repeat">Repeat Password:</label>
+          <input type="password" id="password_repeat" name="password_repeat" required>
+          <span class="error" id="passwordRepeatError"></span>
+      </div>
+      <div>
+          <input type="checkbox" id="rules" style="width: 50px;" name="rules" required>
+
+      </div>
+      <button type="submit">Register</button>
+  </form>
+  
+  <style>
+      .form2 {
+        width: 50%;
+        margin: 0 auto;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 5px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    label {
+        font-weight: bold;
+    }
+
+    input {
+        width: 100%;
+        padding: 5px;
+        margin: 5px 0;
+        box-sizing: border-box;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    .error {
+        color: red;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        background-color: #7e7e7e;
+        color: #fff;
+        border: none;
+        border-radius: 3px;
+        cursor: pointer;
+    }
+    .error {
+        color: red;
+    }
+</style>
+  <script>
+      document.getElementById("registrationForm").onsubmit = function(event) {
+          event.preventDefault();
+
+          // Validation logic here
+
+          // Example of validating name field
+          const name = document.getElementById("name").value;
+          const nameError = document.getElementById("nameError");
+
+          if (!/^[а-яА-ЯёЁ\s-]+$/.test(name)) {
+              nameError.textContent = "Name can only contain Cyrillic characters, space, and hyphen";
+              return false;
+          } else {
+              nameError.textContent = "";
+          }
+
+          // Add similar validation logic for other fields
+
+          // If all validations pass, submit the form
+          this.submit();
+      };
+  </script>
+  <br>
+  <br>
+  
+<div style="align-items: center; border: 0px solid white; margin-top: 40px;" class="card  " style="max-width: 1200px; border: 0px;">
+   
+     
+<div style="align-items: center; border: 1px solid #ffffff; max-width: 1400px;"> 
+    <div class="card bg-light" style="border: 0;"> 
+        <div class="card-footer bg-light mb-12" style="border: 1px solid #ccc;"> 
+            <div class="footer-content" style="padding: 20px;"> 
+                <p style="font-size: 16px; color: #333; margin-bottom: 10px;">МАУК "Библиотека А. Аалто" Все права защищены.</p> 
+                <p style="font-size: 14px; color: #555; margin-bottom: 5px;">Директор: Рогозина Елена Сергеевна</p> 
+                <p style="font-size: 14px; color: #555; margin-bottom: 5px;">e-mail: e.rogozina@aaltolibrary.ru</p> 
+                <p style="font-size: 14px; color: #555; margin-bottom: 5px;">Телефон: 8 (81378) 2 49 37</p> 
+                <p style="font-size: 14px; color: #555;">Адрес: 188800 Ленинградская область, г. Выборг, пр. Суворова, д. 4</p> 
+            </div> 
+        </div> 
+    </div> 
+</div>
+    </div>
+  
+</body>
+
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+
+</html>
+</html>

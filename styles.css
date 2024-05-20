@@ -1,0 +1,200 @@
+.col-lg-6 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+}
+
+th {
+  background-color: #4caf50;
+  color: white;
+}
+
+tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  width: 1410px;
+  height: 116px;
+  left: 80px;
+  top: 35px;
+}
+.logo1 {
+  display: flex;
+  width: 41px;
+  height: 41px;
+  left: 21px;
+  top: 45px;
+}
+.menu {
+  justify-content: space-between;
+  margin-left: 50px;
+  font-family: "Inter";
+  font-weight: 500;
+  font-size: 16px;
+  color: #b8becd;
+  width: 803px;
+  height: 60px;
+
+  top: 35px;
+}
+
+.lr {
+  display: flex;
+  justify-content: space-evenly;
+  width: 353px;
+  height: 60px;
+}
+.onass {
+  text-decoration: none;
+}
+.onas {
+  text-decoration: none;
+  color: rgb(52, 36, 196);
+}
+.home1:hover {
+  content: "";
+  border-bottom: 3px solid rgb(13, 11, 114);
+  background-color: aliceblue;
+}
+.login1 {
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  width: 150px;
+  color: #000000;
+  border-color: #1d63fb;
+  align-items: center;
+  border-radius: 8px;
+  content: "";
+  display: inline;
+  background: white;
+  border-top: 8px solid color #fb8f1d;
+}
+.login1:active {
+  margin-top: 5px;
+}
+.login2 {
+  border-radius: 8px;
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 50px;
+  width: 150px;
+  color: white;
+  border: none;
+  align-items: center;
+  border-radius: 8px;
+  content: "";
+  display: inline;
+  background: #211dfb;
+  border-top: 8px solid color #fb8f1d;
+}
+.login2:active {
+  margin-top: 5px;
+}
+
+.card.map-card .button .btn-floating {
+  margin-top: -1.5rem;
+}
+
+.container-fluid {
+  max-width: 1200px;
+}
+.nav-link {
+  font-family: "Inter";
+  font-style: normal;
+  color: #000000;
+}
+.thos {
+  width: 450px;
+}
+.text2 {
+  text-align: center;
+  margin-top: 100px;
+  left: 56.38%;
+  right: 13.56%;
+  top: 21.53%;
+  bottom: 76.68%;
+
+  font-family: "Playfair Display";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+
+  color: #000000;
+}
+.text3 {
+  margin-top: 25px;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 350;
+  font-size: 20px;
+  line-height: 35px;
+
+  color: #000000;
+}
+
+.card {
+  display: flex;
+
+  cursor: pointer;
+  padding: 20px 20px 20px 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 12px;
+}
+a {
+  text-decoration: none;
+  font-size: 16px;
+}
+
+.vynil {
+  display: flex;
+  flex-direction: column;
+}
+
+.collection .cards .card .vynil img {
+  width: 250px;
+}
+
+.collection .cards .card .vynil a {
+  font-size: 16px;
+  font-weight: bold;
+  color: black;
+  padding-top: 20px;
+}
+
+.card:hover {
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+}
+@font-face {
+  src: url("./Geometria/Geometria-BoldItalic.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
+.a {
+  src: url("./Geometria/Geometria-BoldItalic.woff") format("truetype");
+  font-style: normal;
+  font-weight: normal;
+}
